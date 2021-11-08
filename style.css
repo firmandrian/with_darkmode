@@ -1,0 +1,220 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+section {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+}
+.section {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+}
+.section-dua {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #434343;
+}
+header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+input[type="checkbox"] {
+	position: relative;
+	width: 40px;
+	height: 20px;
+	appearance: none;
+	background-color: #434343;
+	outline: none;
+	border-radius: 10px;
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+input[type="checkbox"]:checked {
+	background-color: #3664ff;
+}
+input[type="checkbox"]::before {
+	content: "";
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	background-color: #fcfcfc;
+	border-radius: 50%;
+	top: 2px;
+	left: 2px;
+	transition: 0.5s ease;
+}
+input[type="checkbox"]:checked::before {
+	transform: translateX(20px);
+}
+.toggle-container {
+	position: fixed;
+	top: 60px;
+	right: 10px;
+}
+header .header {
+	display: flex;
+}
+header .logo {
+	position: relative;
+	max-width: 80px;
+	top: 60px;
+}
+.pusing a:hover {
+	color: red;
+}
+.pusing-dua a:hover {
+	color: greenyellow;
+}
+header ul {
+	display: flex;
+	/* position: relative;  */
+	position: absolute;
+	top: 63px;
+	right: 180px;
+}
+header ul li {
+	list-style: none;
+}
+.pusing-dua a {
+	display: inline-block;
+	color: white;
+	font-weight: 400;
+	margin-left: 40px;
+	text-decoration: none;
+}
+header ul li a {
+	display: inline-block;
+	color: black;
+	font-weight: 400;
+	margin-left: 40px;
+	text-decoration: none;
+}
+
+.content {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.content.textBox {
+	position: relative;
+	max-width: 600px;
+}
+.teks {
+	color: #333;
+	font-size: 4em;
+	line-height: 1.4em;
+	font-weight: 500;
+}
+.teks-dua h2 {
+	color: white;
+	font-size: 4em;
+	line-height: 1.4em;
+	font-weight: 500;
+}
+.content .textBox h2 span {
+	color: #017143;
+	font-size: 1.2em;
+	font-weight: 900;
+}
+.content .textBox p {
+	color: #333;
+}
+.content .textBox-dua p {
+	color: white;
+}
+.content .textBox a {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 8px 20px;
+	background: #017143;
+	color: #fff;
+	border-radius: 40px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+.content .imgBox {
+	width: 600px;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 50px;
+	margin-top: 50px;
+}
+.content .imgBox img {
+	max-width: 340px;
+}
+.thumb {
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	transform: translateX(-50%);
+	display: flex;
+}
+.thumb li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	cursor: pointer;
+}
+.thumb li:hover {
+	transform: translateY(-15px);
+}
+.thumb li img {
+	max-width: 60px;
+}
+.sci {
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	transform: translateY(-50);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.sci li {
+	list-style: none;
+}
+.sci li a {
+	display: inline-block;
+	margin: 5px 0;
+	transform: scale(0.6);
+	filter: invert(1);
+}
+.circle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #017143;
+	clip-path: circle(600px at right 800px);
+}
